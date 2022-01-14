@@ -16,8 +16,8 @@ import java.nio.file.Path;
  *    can add any HTML element you wish as a new class to the project (e.g. img, p, code, ...).
  * 3) Next it's time to refactor the codebase a bit. Go ahead and move things around as much as you'd like. Adding
  *    JavaDocs where it makes sense might not be bad either. What do you see as the most egregious part of the code?
- * 4) (Optional) Create an array or any type of list with some data you wish. Now print everything in the array/list on the page
- *    using a serverside component.
+ * 4) Create an array or any type of list with some data you wish. Now print everything in the array/list to
+ *    the content div using a serverside component. The print out should show only one element on a single HTML line.
  * 5) (Optional) Delete the mainLayout, everything related to it, and start implementing any layout you wish. You can
  *    also directly modify the index.html if you'd rather work more on the HTML side.
  *
