@@ -10,14 +10,16 @@ import java.nio.file.Path;
  * browser to view the result.
  *
  * ==== Java exercises ====
+ *
  * 1) Below exists code for a simple HTTP server. The server unfortunately has a bug which prevents it from working
- *    properly. You need to fix this before moving on.
+ *    properly. You need to fix it first before moving on.
  * 2) Review the classes involved in the project and try to figure out how the application is working. After that you
- *    can add any HTML element you wish as a new class to the project (e.g. img, p, code, ...).
- * 3) Next it's time to refactor the codebase a bit. Go ahead and move things around as much as you'd like. Adding
- *    JavaDocs where it makes sense might not be bad either. What do you see as the most egregious part of the code?
- * 4) Create an array or any type of list with some data you wish. Now print everything in the array/list to
- *    the content div using a serverside component. The print out should show only one element on a single HTML line.
+ *    can add any fun visual HTML element you wish as a new class to the project (e.g. img, video, or maybe an embedded
+ *    YouTube video of your favourite artist :). You should parameterize the constructor in a way that makes it reusable.
+ * 3) Create an array with some data you wish. Now print everything in the array to the web page using a serverside
+ *    component. The print out should show only one element on a single HTML line.
+ * 4) (Optional) Next it's time to refactor the codebase a bit. Go ahead and move things around as much as you'd like.
+ *    Adding JavaDocs where it makes sense might not be bad either. What do you see as the most egregious part of the code?
  * 5) (Optional) Delete the mainLayout, everything related to it, and start implementing any layout you wish. You can
  *    also directly modify the index.html if you'd rather work more on the HTML side.
  *
@@ -29,8 +31,8 @@ import java.nio.file.Path;
  *    like the target.png screenshot. You will find places to edit by searching for the TODO-CSS2 comment.
  *
  * ==== Hints ====
- * - The optimal order of doing the exercises initially is as follows: Java 1, CSS 1. After that you can progress however
- *   you feel like.
+ * - The optimal order of doing the exercises initially is as follows: Java 1, CSS 1. Otherwise it can be hard to figure
+ *   out what the web page really looks like. After that you can progress however you feel like.
  *
  */
 public class Main {
