@@ -29,7 +29,8 @@ import java.nio.file.Path;
  *    like the target.png screenshot. You will find places to edit by searching for the TODO-CSS2 comment.
  *
  * ==== Hints ====
- * - The optimal order of doing the exercises is as follows: Java 1, CSS 1, Java 2, Java 3, CSS 2
+ * - The optimal order of doing the exercises initially is as follows: Java 1, CSS 1. After that you can progress however
+ *   you feel like.
  *
  */
 public class Main {
