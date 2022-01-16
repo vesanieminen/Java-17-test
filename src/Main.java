@@ -7,7 +7,7 @@ import java.nio.file.FileSystems;
 import java.nio.file.Files;
 
 /**
- * This project currently requires JDK 17 in order to be run!
+ * This project works with Java 8
  *
  * To start the application go ahead and run the main method. After that you can
  * navigate to localhost:8080 with your browser to view the result.
