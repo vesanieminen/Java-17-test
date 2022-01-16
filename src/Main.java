@@ -22,6 +22,8 @@ import java.nio.file.Path;
  *    Adding JavaDocs where it makes sense might not be bad either. What do you see as the most egregious part of the code?
  * 5) (Optional) Delete the mainLayout, everything related to it, and start implementing any layout you wish. You can
  *    also directly modify the index.html if you'd rather work more on the HTML side.
+ * 6) (Bonus) Refactor the styles into its own .css file and load it separately. What kind of changes are required to
+ *    the HTTP server code?
  *
  * ==== CSS exercises ====
  *
@@ -31,6 +33,7 @@ import java.nio.file.Path;
  *    like the target.png screenshot. You will find places to edit by searching for the TODO-CSS2 comment.
  *
  * ==== Hints ====
+ *
  * - The optimal order of doing the exercises initially is as follows: Java 1, CSS 1. Otherwise it can be hard to figure
  *   out what the web page really looks like. After that you can progress however you feel like.
  *
