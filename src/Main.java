@@ -1,7 +1,10 @@
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.ServerSocket;
+import java.net.Socket;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
-import java.nio.file.Path;
 
 /**
  * This project currently requires JDK 17 in order to be run!
@@ -52,10 +55,10 @@ import java.nio.file.Path;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        var server = new ServerSocket(8080);
+        ServerSocket server = new ServerSocket(8080);
         while (true) {
-            final var socket = server.accept();
-            var mainLayout = new VerticalLayout(
+            final Socket socket = server.accept();
+            VerticalLayout mainLayout = new VerticalLayout(
                     new HorizontalLayout("header", new Label("Header - I should be 50px in height and 100 percent wide")),
                     new HorizontalLayout("content-container",
                             new VerticalLayout("navigation",
@@ -75,8 +78,10 @@ public class Main {
                     ),
                     new HorizontalLayout("footer", new Label("Footer - I should be 100px in height and 100 percent wide"))
             );
-            var indexHtml = Files.readString(Path.of("frontend/index.html")).formatted(mainLayout);
-            final var outputStream = socket.getOutputStream();
+            String indexHtml = Files.readAllLines(FileSystems.getDefault().getPath("frontend/index.html"))
+                    .stream().reduce("", (total, line) -> total + "\r\n" + line);
+            indexHtml = String.format(indexHtml, mainLayout);
+            final OutputStream outputStream = socket.getOutputStream();
             outputStream.write("HTTP/1.1 200 OK\r\n\r\n".getBytes());
             outputStream.flush();
             outputStream.write(indexHtml.getBytes());

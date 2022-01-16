@@ -3,9 +3,7 @@ public class Pre implements Component{
     private final String template;
 
     public Pre(String content) {
-        template = """
-                <pre>%s</pre>
-                """.formatted(content);
+        template = String.format("<pre>%s</pre>", content);
     }
 
     @Override

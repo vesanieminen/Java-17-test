@@ -3,9 +3,7 @@ public class Label implements Component {
     private final String template;
 
     public Label(String caption) {
-        template = """
-                <label> %s </label>
-                """.formatted(caption);
+        template = String.format("<label> %s </label>", caption);
     }
 
     @Override

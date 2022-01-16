@@ -3,9 +3,7 @@ public class Anchor implements Component {
     private final String template;
 
     public Anchor(String url, String caption) {
-        template = """
-                <a href="%s"> %s </a>
-                """.formatted(url, caption);
+        template = String.format("<a href='%s'> %s </a>", url, caption);
     }
 
     @Override
