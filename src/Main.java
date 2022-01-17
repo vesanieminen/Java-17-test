@@ -12,8 +12,8 @@ import java.nio.file.Path;
  * ==== Java exercises ====
  *
  * 1) Below exists code for a simple HTTP server. The server unfortunately has a
- *    bug which prevents it from working properly. You should to find this and
- *    fix it first before moving on.
+ *    bug which prevents it from working properly. You should to try to find
+ *    this issue and fix it first before moving on.
  * 2) Review the classes involved in the project and try to figure out how the
  *    application is working.
  * 3) After that you can add any fun visual HTML element you wish as a new class
